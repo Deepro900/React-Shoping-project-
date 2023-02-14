@@ -5,10 +5,12 @@ import './App.css';
 import About from './Component/About/About';
 import Inventory from './Component/Inventory/Inventory';
 import Main from './Component/Layout/Main';
+import Login from './Component/Login/Login';
 import Orders from './Component/Orders/Orders';
 
 import Product from './Component/Product/Product';
 import Shop from './Component/Shop/Shop';
+import SignUp from './Component/SignUp/SignUp';
 import { productAndCartLoader } from './Loaders/ProductAndCartLoader';
 
 
@@ -37,7 +39,17 @@ function App() {
         {
           path: 'about',
           element: <About></About>
+        },
+        {
+          path: 'login',
+          element: <Login></Login>
+
+        },
+        {
+          path: 'signup',
+          element: <SignUp></SignUp>
         }
+
       ]
     },
 
